@@ -46,8 +46,8 @@ function Home() {
                             </div>
                             <div className='w-full h-auto flex items-center justify-center gap-4'>
                                 <ShinyText text="Developer" disabled={false} speed={2} className='custom-class z-1' />
-                                <Link to={"/designer"}>
-                                    <ShinyText text="Designer" disabled={false} speed={2} className='custom-class z-1' />
+                                <Link to={"/designer"} className='z-1'>
+                                    <ShinyText text="Designer" disabled={false} speed={2} className='custom-class' />
                                 </Link>
                             </div>
                         </div>
