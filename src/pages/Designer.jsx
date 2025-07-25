@@ -3,6 +3,9 @@ import BlurText from "../components/BlurText.jsx";
 import DotGrid from "../components/DotGrid.jsx";
 import AMPMMockup from "../images/designer/ampm-mockup.webp";
 import Mockup from '../components/Mockup.jsx';
+import VEMockup from "../images/designer/virtualenvironment-mockup.webp";
+import ALMIRMockup from "../images/designer/almir-mockup.webp";
+import JimboAppMockup from "../images/designer/jimboApp-mockup.webp";
 
 function Designer() {
 
@@ -37,7 +40,7 @@ function Designer() {
                     </div>
                 </section>
 
-                <section className="relative w-full h-screen overflow-hidden">
+                <section className="relative w-full h-auto overflow-hidden">
                     <div className="absolute inset-0 z-10">
                         <DotGrid
                             dotSize={10}
@@ -54,31 +57,40 @@ function Designer() {
 
                     {/* Contenido encima */}
                     <div className="w-full h-auto flex flex-col items-center justify-center relative z-10 px-8 py-12 text-white">
-                        <h2 className="text-8xl my-12 font-extrabold">Designer Section</h2>
+                        <h2 className="text-3xl sm:text-6xl md:text-7xl lg:text-8xl my-12 font-extrabold">Designer Section</h2>
                         <article className='w-full h-full flex flex-wrap items-center justify-center gap-8'>
-                            {/* 1 */}
+                            {/* ampm */}
                             <Mockup
                                 imgSrc={AMPMMockup}
-                                title="AMPM System Design"
+                                title="AMPM Desktop System Design"
                                 description="This design aims to improve the current systems for the warehouse storage area."
+                                refSee={"https://www.figma.com/design/J7lS6MAzZ8y4XPihk0HYvf/Untitled?node-id=0-1&t=978ewaJoxmYa4Ikb-1"}
+                                refDemo={"https://www.figma.com/proto/J7lS6MAzZ8y4XPihk0HYvf/Untitled?node-id=22-2&p=f&t=978ewaJoxmYa4Ikb-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"}
                             />
-                            {/* 2 */}
+                            {/* udem */}
                             <Mockup
-                                imgSrc={AMPMMockup}
-                                title="AMPM System Design"
-                                description="This design aims to improve the current systems for the warehouse storage area."
+                                imgSrc={VEMockup}
+                                title="Virtual Environment Design"
+                                description="Reengineering of UdeM's Virtual Environment and
+                                 Mobile Application."
+                                refSee={"https://www.figma.com/design/n7ds70Gz3lvFGDqMgCuvax/Untitled?node-id=0-1&t=2OpHLJPabVgduvmz-1"}
+                                refDemo={"https://www.figma.com/proto/n7ds70Gz3lvFGDqMgCuvax/Untitled?node-id=5-2&p=f&t=xKdEchmUIrJ44hKr-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=5%3A2&show-proto-sidebar=1"}
                             />
-                            {/* 3 */}
+                            {/* almir */}
                             <Mockup
-                                imgSrc={AMPMMockup}
-                                title="AMPM System Design"
-                                description="This design aims to improve the current systems for the warehouse storage area."
+                                imgSrc={ALMIRMockup}
+                                title="Almir Web System Design"
+                                description="CRM Web Design for Inventory Control with Database Included."
+                                refSee={"https://www.figma.com/design/am4dw9nXIp8W8chw3ZJ05x/Untitled?node-id=0-1&t=OYUlg2W8YHPTFUkt-1"}
+                                refDemo={"https://www.figma.com/proto/am4dw9nXIp8W8chw3ZJ05x/Untitled?node-id=164-3&p=f&t=0tBZ46RmFCygSIaF-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=164%3A3&show-proto-sidebar=1"}
                             />
                             {/* 4 */}
                             <Mockup
-                                imgSrc={AMPMMockup}
-                                title="AMPM System Design"
-                                description="This design aims to improve the current systems for the warehouse storage area."
+                                imgSrc={JimboAppMockup}
+                                title="JimboApp Desktop Design"
+                                description="Desktop Application to Improve and Practice Early Childhood Learning."
+                                refSee={"https://www.figma.com/design/MmFEeF9kJ9L26qHKlT0aGQ/Untitled?node-id=0-1&t=xKP922ONEDLY2qsS-1"}
+                                refDemo={"https://www.figma.com/proto/MmFEeF9kJ9L26qHKlT0aGQ/Untitled?node-id=3-2&p=f&t=g7Cn8rjiwcIzCJyx-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A2"}
                             />
                         </article>
                     </div>
